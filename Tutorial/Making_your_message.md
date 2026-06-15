@@ -27,16 +27,16 @@ Each message folder also must have a unique name, which should be clear why.
 
 ## Adding your message
 
-Start by creating a folder with a unique name inside the "content" folder. Inside this folder, create a file named "message.json" (without the quotes), and copy the contents of [`Example_folders/Empty_message.json`](../Example_folders/Empty_message.json) into the message.json file you just created. If you wwant to add a picture to your message, also add your picture in this folder (make sure everybody in the picture is okay with you using that picture, it will be visible to the entire internet after all). 
+Start by creating a folder with a unique name inside the "content" folder. Inside this folder, create a file named "message.json" (without the quotes), and copy the contents of [`Example_folders/Empty_message.json`](../Example_folders/Empty_message.json) into the message.json file you just created. If you want to add a picture to your message, also add your picture in this folder (make sure everybody in the picture is okay with you using that picture, it will be visible to the entire internet after all). 
 
 You can now write your message inside the message.json file you've created. Here is a description of the fields you may use:
 
 | Field | Mandatory? | How to use | Example |
 |:-----:|:----------:|:-----------|:-------:|
-| "image_filename" | Depends | If you've added a picture to your folder, write down the file name and file type in this field (see examples) | [`Example_with_image`](../Example_folders/Example_with_image/message.json) [`Example_without_image`](../Example_folders/Example_no_image/message.json) |
-| "title" | Yes | Write a title to your message in this field | [`Example_with_title`](../Example_folders/Example_no_image/message.json) |
-| "author" | No | Write your name, a pseudonym or leave this field blank to stay fully anonymous | [`Example_with_author`](../Example_folders/Example_no_image/message.json) [`Èxample_without_author`](../Example_folders/Example_no%20author/) |
-| "message" | Yes | Write your kind message to the mentors! The examples contain some idea's, but don't be scared to write your own thing! (Try not to exceed 100 words) | [`Example_message`](../Example_folders/Example_no_image/message.json) |
+| "image_filename" | Depends | If you've added a picture to your folder, write down the file name and file type in this field (see examples) | [`Example_with_image`](../Example_folders/Example_with_image/) [`Example_without_image`](../Example_folders/Example_no_image/) |
+| "title" | Yes | Write a title to your message in this field | [`Example_with_title`](../Example_folders/Example_no_image/) |
+| "author" | No | Write your name, a pseudonym or leave this field blank to stay fully anonymous | [`Example_with_author`](../Example_folders/Example_no_image/) [`Èxample_without_author`](../Example_folders/Example_no_author/) |
+| "message" | Yes | Write your kind message to the mentors! The examples contain some idea's, but don't be scared to write your own thing! (Try not to exceed 100 words) | [`Example_message`](../Example_folders/Example_no_image/) |
 
 The example message folders together would look like this on the final webpage:
 
