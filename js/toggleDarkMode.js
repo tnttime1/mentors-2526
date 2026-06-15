@@ -77,3 +77,16 @@ function getCookie(cookieName) {
     }
     return "";
 }
+
+
+let bodyObserver = new MutationObserver((mutationList, observer) => {
+    if (getCookie("darkModeToggle") == "dark") {
+        setDarkMode();
+    }
+});
+
+bodyObserver.observe(document.querySelector('main'), { attributes: false, childList: true, subtree: true });
+
+const kill_observer = setTimeout(() => {
+    bodyObserver.disconnect();
+}, 10000);
