@@ -1,8 +1,8 @@
-const dir = "https://kl1318.github.io/mentors-2526/content/";     // Change to http://127.0.0.1:5500/content/ when hosting locally
+const dir = "https://kl1318.github.io/mentors-2526/content/";     // Change to http://127.0.0.1:5500/content/ when hosting locally and https://kl1318.github.io/mentors-2526/content/ when online
 
 
 document.getElementById("message-container").addEventListener("click", (event) => {
-    if (event.target.nodeName == "IMG") {
+    if (event.target.nodeName == "IMG" && innerWidth > 600) {
         document.getElementById("image-view").style.display = "flex";
         document.getElementById("image-view-image").src = event.target.src;
     }
