@@ -1,5 +1,17 @@
 const dir = "http://127.0.0.1:5500/content/";
 
+
+document.getElementById("message-container").addEventListener("click", (event) => {
+    if (event.target.nodeName == "IMG") {
+        document.getElementById("image-view").style.display = "flex";
+        document.getElementById("image-view-image").src = event.target.src;
+    }
+});
+document.getElementById("img-close-btn").addEventListener("click", () => {
+    document.getElementById("image-view").style.display = "none";
+});
+
+
 async function fetchItem(directory) {
     const response = await fetch(directory);
     if (!response.ok) {
@@ -59,11 +71,10 @@ async function loadContentToWebpage() {
             
             const column_num = (curr_folder % 3) + 1;
             document.getElementById("column" + column_num).appendChild(card);
-            console.log(column_num);
     
             // console.log(card.offsetHeight);
         } else {
-            console.error(`Couldn't load ${dir + folder_arr[curr_folder] + "/message.json"}, file was not found or wrongly filled in`);
+            console.error(`Couldn't load ${dir + folder_arr[curr_folder] + "/message.json"}, file was not found or wrongly filled in.`);
         }
     }
 }

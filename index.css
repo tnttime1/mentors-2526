@@ -54,6 +54,10 @@ h2.card-title {
 p {
     font-family: "Avenir medium";
 }
+span.img-close-btn {
+    font-family: "Avenir heavy";
+    font-size: 1.6em;
+}
 
 
 /* Element styling */
@@ -111,8 +115,59 @@ div.card {
     padding: 5%;
     margin-bottom: 10px;
 }
-div img {
+div.card img {
     object-fit: fill;
+    border-radius: 8px;
+    transition: transform .3s;
+}
+div.card img:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+div.image-view {
+    position: fixed;
+    top: 2.5vh;
+    left: 10vw;
+    height: 95vh;
+    width: 80vw;
+    margin: auto auto;
+    display: none;
+    flex-direction: column;
+    background-color: var(--dark-accent-100);
+    border-radius: 10px;
+}
+.img-header {
+    width: 100%;
+    height: 8%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+span.img-close-btn {
+    float: right;
+    margin: 1% 2%;
+    transition: transform 0.2s;
+}
+span.img-close-btn:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+hr.image-view-divider {
+    width: 99%;
+    margin: 0% auto;
+}
+div.image-view-container {
+    width: 100%;
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.image-view-container img {
+    max-width: 96%;
+    max-height: 96%;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 footer {
@@ -152,10 +207,12 @@ button.light:hover {
 
 h1.light,
 h2.light,
-p.light
+p.light,
+span.light
 {
     color: var(--light-text-100);
 }
+
 
 /* Dark mode styling */
 body.dark,
@@ -184,7 +241,8 @@ button.dark:hover {
 
 h1.dark,
 h2.dark,
-p.dark
+p.dark,
+span.dark
 {
     color: var(--dark-text-100);
 }

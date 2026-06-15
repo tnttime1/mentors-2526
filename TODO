@@ -1,4 +1,3 @@
 - Make contentloader load the next card into the smallest column so all columns are roughly of even length after loading has finished
 - Check how pull requests work with a friend/alt account
 - Finish writing the readme
-- Create empty JSON file
