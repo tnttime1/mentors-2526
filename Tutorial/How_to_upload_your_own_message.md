@@ -23,7 +23,7 @@ This video shows you how to create a pull request in 100 seconds: [GitHub Pull R
 
 Please read the [`Making_your_message.md`](./Making_your_message.md) file carefully to see what you should add to the repository for your message to show up on the webpage. Once you've implemented this in your local copy of the repository, you can create a pull request! Make sure to check your GitHub every couple of days in case your pull request gets declined, so that you can edit your submission so that it works! If your pull request gets declined and you don't edit it, it will sadly not end up on the webpage (don't worry though, there is very little that can go wrong.)
 
-## I can't/don't want to make a pull request, but I still want to haave my message appear on the webpage. What can I do?
+## I can't/don't want to make a pull request, but I still want to have my message appear on the webpage. What can I do?
 
 Please try to find someone who can make a pull request. I am not sure about AI students, but all CS students should have a GitHub account and git working, so see if you can find someone to do it for you. If you really can't find someone to do it for you, you may also shoot me a dm and I will upload your message.
 
